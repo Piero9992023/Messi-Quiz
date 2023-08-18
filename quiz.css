@@ -1,16 +1,17 @@
+/*All of the body will be changed to white text*/
 body{
     color: white;
 }
-
+/*Font size chnaged on the timer*/
 #time-text {
     font-size: 3rem;
 }
-
+/* Font changed and margin left changed on the timer*/
 #timer-display {
     font-size: 3rem;
     margin-left: 5rem;
 }
-
+/*Set display to flex, added margins, and rounded corners, set a background color to blue, changed font font size and the width of all the choice boxes*/
 .choice-container {
     display: flex;
     margin-bottom: 0.8rem;
@@ -20,48 +21,49 @@ body{
     font-size: 3rem;
     min-width: 60rem;
 }
-
+/*The cursor will be a pointer when hovered over and the choice box will have a set box shadow of blue* and also the scale will change and will transform after 100ms*/
 .choice-container:hover{
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
     transform: scale(1.02);
     transform: transform 100ms;
 }
-
+/* choice text will have a set padding and be changed to have a text color of white*/
 .choice-prefix {
     padding: 2rem 2.5rem;
     color: white;
 }
-
+/* Padding and width changed of the text in the choices*/
 .choice-text {
     padding: 2rem;
     width: 100%;
 
 }
-
+/* When answer is right then it will be green*/
 .correct{
     background-color: #00ff00;
 }
-
+/* When answer is wrong then it will be red*/
 .incorrect{
     background-color: #ff0000;
 }
-
+/* diplay is set to flez and content has a space in between*/
 #hud {
     display: flex;
     justify-content: space-between;
 }
 
+/* Set to center text and chnaged font-size*/
 .hud-prefix{
     text-align: center;
     font-size: 2rem;
 }
-
+/* Set to center text*/
 .hud-main-text {
     text-align: center;
 }
 
-
+/* Pregress bar has a set width, height, border with color, top margin, border-radius (roundness), and overflow to be hidden */
 #progress-bar {
     width: 20rem;
     height: 3rem;
@@ -71,11 +73,15 @@ body{
     overflow:hidden;
 }
 
+/* progress height takes up space and progress bar will be green with a width of 0% */
+
 #progressBarFull {
     height: 100%;
     background: rgb(11, 223, 36);
     width: 0%;
 }
+
+/*Adjusting size and compatability for mobile users */
 
 @media screen and (max-width: 768px) {
     .choice-container {

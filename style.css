@@ -1,27 +1,29 @@
+/*Background color will be dark*/
 :root {
     background-color: rgb(29,26,26)
 
 }
-
+/* All content will have a set border box, padding, font-size, and specific font*/
 * {
     box-sizing: border-box;
     padding: 0;
     font-size: 62.5%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+/*Changed font-size, color, margin, and centered text on all h1 tags*/
 h1 {
     font-size: 5.4rem;
     color: white;
     margin-bottom: 5rem;
     text-align: center;    
 }
-
+/*Font changed and also bottom margin on all h2 tags*/
 h2 {
     font-size: 4.2rem;
     margin-bottom: 4rem;
 }
-
+/*The flexbox container will have full width and height, display set to flex, content centered
+items will be centered, max width has been set, margin set to auto, and added padding*/
 .container {
     width: 100vw;
     height: 100vh;
@@ -32,28 +34,29 @@ h2 {
     margin: 0 auto;
     padding: 2rem;
 }
-
+/*Flex column will be set to display flex and direction set to column*/
 .flex-column{
     display: flex;
     flex-direction: column;   
 }
-
+/*Sets flex content class content to center*/
 .flex-center {
     justify-content: center;
 }
-
+/*Set justify-center class content to center*/
 .justify-center{
     justify-content: center;
 }
-
+/*Cneters text*/
 .text-center {
     text-align: center;
 }
-
+/*hidden class will not show*/
 .hidden {
     display:none;
 }
-
+/*Changed font size, padding, width, centered text, changed margins, no text decoration, changed color
+background color changed, and  rounded the button*/
 .btn {
     font-size: 2.4rem;
     padding: 2rem 0;
@@ -66,30 +69,36 @@ h2 {
     background: linear-gradient(90deg, rgb(18,92,255) 50%, rgb(255,0,0) 50%);
     border-radius: 4px;
 }
-
+/*When hover over button then pointer will appear, and have a box shadow of the color blue and will 
+transform after 150ms*/
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgb(8, 114,244, 0.6);
     transition: transform 150ms;
     transform: scale (1.03);
 }
-
+/*The button will not allow the cursor, no shadow, and will not transform*/
 .btn[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
 }
-
+/*background color was set of the highscore button*/
 #highscore-btn{
     background: linear-gradient(90deg, rgb(255,115,180)40%, rgb(0,0,0)100%);
 }
-
+/*Once hover a box shadow will appear */
 #highscore-btn:hover{
     box-shadow: 0 0.4rem 1.4rem 0 rgb(255,105,180);
 }
 
+
+
 /* End Page CSS*/
 
+
+/*End page will have a set width, display flex, and all will be set to column, and text will be 
+centered have a max width of 30rem*/
 .end-form-container {
     width: 100%;
     display: flex;
@@ -97,7 +106,7 @@ h2 {
     align-items: center;
     max-width: 30rem;
 }
-
+/*Will have a different bottom margin, width, padding, border, box shadow*/
 input {
     margin-bottom: 1rem;
     width: 20rem;
@@ -105,11 +114,12 @@ input {
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86,185,235,0.5);
 }
-
+/*Placeholder will be a different color*/
 input::placeholder {
     color: #aaa;
 }
-
+/*username will have a set width, margins, no outline, changed font size, and text will be 
+centered*/
 #username {
     width: 100%;
     margin-bottom: 3rem;
@@ -118,14 +128,14 @@ input::placeholder {
     text-align: center;
     margin-left: 18rem;
 }
-
+/*end page text will have a changed font-size, margin, and content will be centered, and font color will be changed*/
 #end-text {
     font-size: 2.4rem;
     color: #fff;    
     margin-left: 18rem;
     justify-content: center;
 }
-
+/*Save high score button will have changed font-size, margin, and font color, and content will be centered*/
 #saveScoreBtn {
     margin-left: 18rem;
     font-size: 2.4rem;
@@ -133,11 +143,11 @@ input::placeholder {
     justify-content: center;
     
 }
-
+/*button will be aligned to the center*/
 .btn-align {
     justify-content: center;
 }
-
+/*final score text will have a changed margin*/
 #finalScore {
     margin-left: 8rem;
 }

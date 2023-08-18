@@ -1,7 +1,10 @@
+
+/* Adding color to the text */
 body {
     color: white;
 }
 
+/* Taking out bullet points and adding bottom margin and also putting everything in the center with a margin left of 11rem */
 #highScoresList {
     list-style: none;
     margin-bottom: 4rem;
@@ -9,6 +12,7 @@ body {
     margin-left: 11rem;
 }
 
+/* Adding size and margin to the bottom of the text */
 .high-score {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
